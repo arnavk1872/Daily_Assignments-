@@ -1,0 +1,28 @@
+#h1{
+    color: red; font-size: 24px; background: red;
+}
+.h2{
+    color: blue;
+}
+.item1{
+    font-weight: bold;
+}
+.item2{
+    font-weight: italic;
+}
+#pg1{
+    background-color: yellow;
+     padding: 10px;
+}
+#pg2{
+    text-align: center;
+}
+
+#sec1{
+    border: 1px solid black;
+}
+
+#sec2{
+    border: 1px solid black; 
+    background: red;
+}
