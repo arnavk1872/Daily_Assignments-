@@ -1,0 +1,350 @@
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #4682B4; /* Darker blue color on hover */
+}
+.navbar li{
+    float:left;
+    list-style: none; 
+    margin: 13px 20px;
+}
+
+
+
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.navbar input{
+    border: 2px solid rgb(190, 174, 174);
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+}
+
+ 
+/* Contact section*/
+  .contact{
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+    margin: 20px;
+    margin-bottom: 30px;
+
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+.form-group .radio-group {
+    display: flex;
+    gap: 10px;
+}
+.form-group .radio-group label {
+    cursor: pointer;
+}
+.form-group .checkbox-group {
+    display: flex;
+    gap: 10px;
+}
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.submit{
+    margin-top: 30px;
+    font-family: monospace;
+    width: 70px;
+    height: 40px;
+    
+}
+
+/*About section*/
+
+.center{
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+    margin:80px;
+}
+body {
+    font-family:monospace;
+    text-align: center;
+}
+
+.card {
+
+    width: 320px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 20px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    margin: 0 0 10px 0;
+}
+
+.card p {
+    margin: 0 0 10px 0;
+}
+
+.card button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.card button:hover {
+    background-color: #45a049;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #3f7ab9;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+ /*Home Section*/
+.type
+    {
+        font-size: 50px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typewriter 3s steps(13) infinite alternate,
+            blink 800ms steps(16) infinite normal;
+        border-right: 5px solid rgb(204, 204, 204);
+    }
+
+    @keyframes typewriter {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    /*Resume*/
+    
+    .resume .resume-title {
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #45505b;
+      }
+      .resume .resume-item {
+        padding: 0 0 20px 20px;
+        margin-top: -2px;
+        border-left: 2px solid #0563bb;
+        position: relative;
+      }
+      .resume .resume-item h4 {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: #0563bb;
+        margin-bottom: 10px;
+      }
+      .resume .resume-item h5 {
+        font-size: 16px;
+        background: #f7f8f9;
+        padding: 5px 15px;
+        display: inline-block;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .resume .resume-item ul {
+        padding-left: 20px;
+      }
+      .resume .resume-item ul li {
+        padding-bottom: 10px;
+      }
+      .resume .resume-item:last-child {
+        padding-bottom: 0;
+      }
+      .resume .resume-item::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        left: -9px;
+        top: 0;
+        background: #fff;
+        border: 2px solid #0563bb;
+      }
+
+      /*Portfolio*/
+
+      
+
+      /*footer*/
+         footer {
+                    text-align: center;
+                    padding: 30px;
+                    background-color: #3f7ab9;
+        
+                }
+        
+                footer a {
+                    margin: 30px;
+                    color: #fdfdfd;
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+
+            .bottom{
+                margin-top:50px;
+
+            }
+   
+            /* Add this to your existing CSS or create a new file for portfolio styles */
+
+.portfolio-section {
+    background-color: #f8f8f8; /* Set background color for the portfolio section */
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    margin-top: 10px;
+}
+
+.project p {
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Set button background color */
+    color: #fff; /* Set button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Change button color on hover */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: url(pic/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
