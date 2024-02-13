@@ -17,6 +17,8 @@ const displayInfo = function (message) {
 // Display the students information using a loop to iterate over each property in the object.
 displayInfo.apply(student, ['Student Information using apply :']);
 
+displayInfo.call(student, 'Student Information using call :');
+
 // Using bind method
 const boundDisplayInfo = displayInfo.bind(student, 'Student Information using bind :');
 boundDisplayInfo();
