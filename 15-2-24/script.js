@@ -38,7 +38,7 @@ function renderData(users, posts, todos) {
     const usersList = document.createElement('ul');
     users.forEach(user => {
         const listItem = document.createElement('li');
-        listItem.textContent = `User: ${user.name}  - Email: ${user.email} - Username:${user.username}`;
+        listItem.textContent = `User: ${JSON.stringify(user)}`;
         usersList.appendChild(listItem);
     });
     appElement.appendChild(usersList);
