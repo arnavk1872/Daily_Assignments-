@@ -4,10 +4,6 @@ class Book {
         this.author = author;
         this.isBorrowed = false;
     }
-
-    toggleBorrowStatus() {
-        this.isBorrowed = true;
-    }
 }
 
 class Display {
@@ -16,13 +12,15 @@ class Display {
         this.bookList = JSON.parse(localStorage.getItem('bookList')) || [];
         this.updateUI();
     }
+
     book = new Book();
+    
     add(book) {
         let uiString = `<tr>
                             <td>${book.title}</td>
                             <td>${book.author}</td>
                             <td>${book.isBorrowed ? 'Borrowed' : 'Available'}</td>
-                            <td class="borrow"><button onClick="Borrow(event)"> ${book.isBorrowed ? 'Return' : 'Borrow/Return'} </button></td> 
+                            <td class="borrow"><button class="borrow" onClick="Borrow(event)"> ${book.isBorrowed ? 'Return' : 'Borrow/Return'} </button></td> 
                         </tr>`;
                   
         bookList.innerHTML += uiString;
@@ -86,7 +84,6 @@ function addBookFormSubmit() {
     let title = document.getElementById("bookTitle").value;
     let author = document.getElementById("bookAuthor").value;
     let book = new Book(title, author);
-
 
 
     if (display.validate(book)) {
