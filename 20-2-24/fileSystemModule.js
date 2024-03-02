@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 
 // List all files present in the given directory
-export async function listDirectoryContents(directory = __dirname) {
+export async function listDirectoryContents(directory) {
     try {
         let files = await fs.readdir(directory);
         for (const file of files) {

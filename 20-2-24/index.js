@@ -1,7 +1,7 @@
 import * as fileSystemModule from "./fileSystemModule.js";
 
 
-async function run(){
+function run() {
 
     fileSystemModule.listDirectoryContents("./");
 
@@ -10,7 +10,7 @@ async function run(){
     fileSystemModule.fileData();
 
     fileSystemModule.writeToFile();
-
+   
 }
 
 run();
